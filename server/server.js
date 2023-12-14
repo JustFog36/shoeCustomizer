@@ -1,26 +1,19 @@
-const express = require("express");
+// require("dotenv").config()
+
+const express = require("express")
 const app = express();
+
 const PORT = process.env.PORT || 3000;
-const router = require("./routes");
-const db = require('./config/connection');
+const router = require("./routes")
 
-// Middleware
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
 
-// Routes
-app.use("/", router);
+const db = require('./config/connection')
 
-// Database connection
-db.on('error', (error) => {
-  console.error('MongoDB connection error:', error);
-});
+app.use("/", router)
 
 db.once('open', () => {
-  console.log('Connected to MongoDB');
-  
-  // Start the server after successful database connection
-  app.listen(PORT, () => {
-    console.log(`Server is listening on port ${PORT}`);
-  });
-});
+    app.listen(PORT, () => console.log(`Server is listening port ${PORT}`))
+})
+
