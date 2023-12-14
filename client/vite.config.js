@@ -1,5 +1,16 @@
-import ReactRefresh from '@vitejs/plugin-react';
+// vite.config.js
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-export default {
-  plugins: [ReactRefresh()],
-};
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    proxy: {
+      // Your proxy configurations if needed
+    },
+  },
+  build: {
+    outDir: 'dist', // Output directory for production build
+  },
+});
