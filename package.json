@@ -18,7 +18,7 @@
   "author": "Justice F.",
   "license": "ISC",
   "devDependencies": {
-    "vite": "^5.0.8"
+    "concurrently": "^8.2.2"
   },
   "engines": {
     "node": "20.5.1",
