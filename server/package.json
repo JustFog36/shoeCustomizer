@@ -1,19 +1,25 @@
 {
-  "name": "tech-friends",
+  "name": "shoecustomizer",
   "version": "1.0.0",
-  "description": "Learnin MERN",
+  "description": "Customize a shoe",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/JustFog36/shoeCustomizer.git"
   },
   "keywords": [
-    "Mongo",
-    "Express",
-    "React",
-    "Node"
+    "Shoe"
   ],
-  "author": "Stanley Lewis",
-  "license": "ISC",
+  "author": "Justice F.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JustFog36/shoeCustomizer/issues"
+  },
+  "homepage": "https://github.com/JustFog36/shoeCustomizer#readme",
   "dependencies": {
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
