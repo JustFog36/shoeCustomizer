@@ -1,19 +1,19 @@
-// const express = require("express");
-// const router = express.Router()
+const express = require("express");
+const router = express.Router()
 
-// const { Profile } = require('../../models')
+const { Profile } = require('../../models')
 
-// // GET  /api/profile
-// router.get("/", async (req, res) => {
-//     const profiles = await Profile.find({})
-//     res.json(profiles)
-// })
+// GET  /api/profile
+router.get("/", async (req, res) => {
+    const profiles = await Profile.find({})
+    res.json(profiles)
+})
 
 
-// //POST 
-// router.post("/", async (req, res) => {
-//     const newProfile = await Profile.create(req.body);
-//     res.json(newProfile)
-// })
+//POST 
+router.post("/", async (req, res) => {
+    const newProfile = await Profile.create(req.body);
+    res.json(newProfile)
+})
 
-// module.exports = router;
+module.exports = router;
