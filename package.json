@@ -20,10 +20,6 @@
   "devDependencies": {
     "concurrently": "^8.2.2"
   },
-  "engines": {
-    "node": "20.5.1",
-    "npm": "9.8.0"
-  },
   "dependencies": {
     "mongoose": "^8.0.3"
   }
