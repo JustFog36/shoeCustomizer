@@ -11,8 +11,6 @@ app.use(express.urlencoded({ extended: true }))
 
 const db = require('./config/connection')
 
-app.use("/", router)
-
 db.once('open', () => {
     app.listen(PORT, () => console.log(`Server is listening port ${PORT}`))
 })
